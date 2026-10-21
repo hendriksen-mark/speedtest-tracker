@@ -64,6 +64,13 @@ return [
     'last_24h' => 'Últimas 24 horas',
     'last_week' => 'Última semana',
     'last_month' => 'Último mes',
+    'mtd' => 'Mes hasta la fecha',
+    '90d' => 'Últimos 90 días',
+    'ytd' => 'Año hasta la fecha',
+    '365d' => 'Últimos 365 días',
+    '5y' => 'Últimos 5 años',
+    '10y' => 'Últimos 10 años',
+    'all' => 'Todo',
 
     // Metrics
     'metrics' => 'Métricas',

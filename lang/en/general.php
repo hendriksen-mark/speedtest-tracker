@@ -64,6 +64,13 @@ return [
     'last_24h' => 'Last 24 hours',
     'last_week' => 'Last week',
     'last_month' => 'Last month',
+    'mtd' => 'Month to date',
+    '90d' => 'Last 90 days',
+    'ytd' => 'Year to date',
+    '365d' => 'Last 365 days',
+    '5y' => 'Last 5 years',
+    '10y' => 'Last 10 years',
+    'all' => 'All',
 
     // Metrics
     'metrics' => 'Metrics',

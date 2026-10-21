@@ -62,6 +62,13 @@ return [
     'last_24h' => 'Letzte 24 Stunden',
     'last_week' => 'Letzte Woche',
     'last_month' => 'Letzten Monat',
+    'mtd' => 'Monat bis heute',
+    '90d' => 'Letzte 90 Tage',
+    'ytd' => 'Jahr bis heute',
+    '365d' => 'Letzte 365 Tage',
+    '5y' => 'Letzte 5 Jahre',
+    '10y' => 'Letzte 10 Jahre',
+    'all' => 'Alle',
 
     // Metrics
     'metrics' => 'Metriken',

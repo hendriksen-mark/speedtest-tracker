@@ -64,6 +64,13 @@ return [
     'last_24h' => 'Afgelopen 24 uur',
     'last_week' => 'Vorige week',
     'last_month' => 'Vorige maand',
+    'mtd' => 'Maand tot nu',
+    '90d' => 'Laatste 90 dagen',
+    'ytd' => 'Jaar tot nu',
+    '365d' => 'Laatste 365 dagen',
+    '5y' => 'Laatste 5 jaar',
+    '10y' => 'Laatste 10 jaar',
+    'all' => 'Alle',
 
     // Metrics
     'metrics' => 'Statistieken',
