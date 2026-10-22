@@ -24,7 +24,7 @@ class Repository
                         'Accept' => 'application/vnd.github.v3+json',
                         'User-Agent' => 'speedtest-tracker',
                     ])
-                    ->get('https://api.github.com/repos/alexjustesen/speedtest-tracker/releases/latest');
+                    ->get('https://api.github.com/repos/'.config('speedtest.github_repository').'/releases/latest');
 
                 if (! $response->successful()) {
                     Log::warning('Failed to fetch latest version from GitHub API', [

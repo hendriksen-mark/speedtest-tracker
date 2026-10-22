@@ -11,8 +11,8 @@ trait HasChartFilters
         return [
             '24h' => __('general.last_24h'),
             'week' => __('general.last_week'),
-            'month' => __('general.last_month'),
             'mtd' => __('general.mtd'),
+            'month' => __('general.last_month'),
             '90d' => __('general.90d'),
             'ytd' => __('general.ytd'),
             '365d' => __('general.365d'),

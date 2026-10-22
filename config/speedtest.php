@@ -8,7 +8,9 @@ return [
      */
     'build_date' => Carbon::parse('2026-02-19'),
 
-    'build_version' => 'v1.13.10',
+    'build_version' => env('BUILD_VERSION', 'v1.13.10'),
+
+    'github_repository' => env('SPEEDTEST_GITHUB_REPOSITORY', 'alexjustesen/speedtest-tracker'),
 
     'content_width' => env('CONTENT_WIDTH', '7xl'),
 
