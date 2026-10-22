@@ -7,7 +7,7 @@
                 </x-filament::badge>
             @endif
 
-            <a href="https://github.com/alexjustesen/speedtest-tracker/releases" class="underline text-sm text-gray-700 hover:text-gray-300" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/{{ config('speedtest.github_repository') }}/releases" class="underline text-sm text-gray-700 hover:text-gray-300" target="_blank" rel="noopener noreferrer">
                 {{ config('speedtest.build_version') }}
             </a>
         </div>

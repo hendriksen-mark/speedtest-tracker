@@ -16,7 +16,9 @@ class Repository
      */
     public static function getLatestVersion(): string|false
     {
-        return Cache::remember('github.latest_version', now()->addHour(), function () {
+        $repository = config('speedtest.github_repository');
+
+        return Cache::remember("github.latest_version.{$repository}", now()->addHour(), function () use ($repository) {
             try {
                 $response = Http::retry(3, 100)
                     ->timeout(10)
@@ -24,7 +26,7 @@ class Repository
                         'Accept' => 'application/vnd.github.v3+json',
                         'User-Agent' => 'speedtest-tracker',
                     ])
-                    ->get('https://api.github.com/repos/'.config('speedtest.github_repository').'/releases/latest');
+                    ->get("https://api.github.com/repos/{$repository}/releases/latest");
 
                 if (! $response->successful()) {
                     Log::warning('Failed to fetch latest version from GitHub API', [
