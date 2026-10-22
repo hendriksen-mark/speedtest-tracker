@@ -91,7 +91,7 @@
 
                 <div class="mt-5">
                     <x-filament::button
-                        href="https://github.com/alexjustesen/speedtest-tracker?utm_source=app&utm_medium=dashboard&utm_campaign=github"
+                        href="https://github.com/{{ config('speedtest.github_repository') }}?utm_source=app&utm_medium=dashboard&utm_campaign=github"
                         tag="a"
                         target="_blank"
                     >
